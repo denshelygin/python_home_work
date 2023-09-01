@@ -1,7 +1,6 @@
 import unittest
 from test_matrix import Matrix
 
-
 matr1 = [[1, 2, 3],
          [4, 5, 6],
          [7, 8, 9]]
@@ -16,7 +15,6 @@ class TestCaseName(unittest.TestCase):
     second_matrix = Matrix(matr2)
 
     def test_method(self):
-
         self.assertFalse(self.first_matrix.are_same(self.second_matrix))
         self.assertTrue(self.first_matrix.are_same(self.first_matrix))
 

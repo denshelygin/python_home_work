@@ -1,7 +1,6 @@
 import pytest
 from test_matrix import Matrix
 
-
 matr1 = [[1, 2, 3],
          [4, 5, 6],
          [7, 8, 9]]
@@ -14,6 +13,7 @@ matr2 = [[10, 11, 12],
 def test_are_same():
     first_matrix = Matrix(matr1)
     assert first_matrix.are_same(first_matrix), 'Матрицы не равны'
+
 
 def test_size():
     first_matrix = Matrix(matr1)

@@ -1,5 +1,7 @@
-# 1. Взять класс Матрица и написать для него по 3-4 теста каждого вида (PyTest, UnitTest, DocTest)
+'''
+Задание № 1. Взять класс Матрица и написать для него по 3-4 теста каждого вида (PyTest, UnitTest, DocTest)
 import doctest
+'''
 
 
 class Matrix:
@@ -13,6 +15,7 @@ class Matrix:
     >>> print(my_matrix.are_same(my_matrix))
     True
     """
+
     def __init__(self, matrix):
         self.matrix = matrix
 
@@ -72,7 +75,6 @@ class Matrix:
                 if (self.matrix[i][j] != other.matrix[i][j]):
                     return False
                 return True
-
 
     def transpose(self):
         trans_matrix = list(zip(*self.matrix))
